@@ -1,23 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './ActorDetails.css';
 
-class ActorDetails extends Component {
-  render() {
-    if (!this.props.actorInfo) { 
-      return (
-        <div></div>
-      );
-    }
-
+const ActorDetails = (props) => {
+  if (!props.actorInfo) { 
     return (
-      <div>
-        <h2>{this.props.actorInfo.actorName}</h2>
-        <div>Total Movies: {this.props.actorInfo.totalMovies}</div>
-        <div>Average Score: {this.props.actorInfo.averageScore}%</div>
-      </div>
+      <div>Search for an Actor!</div>
     );
   }
-}
+
+  return (
+    <div>
+      <h2>{props.actorInfo.actorName}</h2>
+      <div>Total Movies: {props.actorInfo.totalMovies}</div>
+      <div>Average Score: {props.actorInfo.averageScore}%</div>
+    </div>
+  );
+};
 
 
 export default ActorDetails;

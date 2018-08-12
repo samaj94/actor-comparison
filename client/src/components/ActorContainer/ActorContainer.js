@@ -23,11 +23,11 @@ class ActorContainer extends Component {
     render() {
         return (
             <div className="actorContainer">
-                <Search
-                    findActionFunction={this.handleSubmit}
-                />
                 <ActorDetails
                     actorInfo={this.state.result}
+                />
+                <Search
+                    findActionFunction={this.handleSubmit}
                 />
             </div>
         )
