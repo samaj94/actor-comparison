@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import ActorContainer from './components/ActorContainer/ActorContainer';
-
+import ActorComparisonContainer from './components/ActorComparisonContainer/ActorComparisonContainer';
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <ActorContainer />
+        <ActorComparisonContainer />
       </div>
     );
   }
